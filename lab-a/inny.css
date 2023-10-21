@@ -1,0 +1,111 @@
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("https://img.freepik.com/free-photo/autumn-season-leafs-plant-scene-generative-ai_188544-7971.jpg?w=1380&t=st=1697895749~exp=1697896349~hmac=605c3d100cdc5cd219ed7ab6277ed0a2e11c3cf94d94c8d9bc4481637e24803f");
+}
+
+header {
+    background-color: #ff5733;
+    text-align: center;
+    padding: 30px;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #ffa07a;
+    text-align: center;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff5733;
+}
+
+main {
+    margin: 30px;
+    padding: 20px;
+    background-color: #ffeead;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+main h3 {
+    font-size: 36px;
+    color: #ff5733;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 20px;
+    color: #333333;
+    display: inline-block;
+    /*width: 200px; /* Ustaw szerokość bloku paragrafu według potrzeb */
+    margin-right: 20px; /* Ustaw odstęp między blokami paragrafów według potrzeb */
+    vertical-align: top; /* Ustaw pionowe wyjustowanie bloków paragrafów */
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    background-color: #333333;
+    padding: 15px;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main h3 {
+        font-size: 24px;
+    }
+
+    main p {
+        font-size: 14px;
+    }
+}
