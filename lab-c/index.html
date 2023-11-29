@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Puzzle Game</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 400px;
+            width: 800px;
+        }
+        .puzzle-piece {
+            margin: 1px;
+            cursor: grab;
+
+        }
+        #puzzle-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #puzzle-table {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            margin-left: 20px;
+            border: 1px solid #000;
+            height: 400px;
+            width: 800px;
+        }
+        .table-cell {
+            width: 200px;
+            height: 100px;
+            border: 1px dashed #000;
+            margin: 0;
+            box-sizing: border-box;
+            position: relative;
+        }
+        #pole_testowe {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<div id="pole_testowe">
+<div id="map"></div>
+<div id="puzzle-table">
+    <!-- The puzzle table will be dynamically added here -->
+    <!-- Each cell is represented by the .table-cell class -->
+    <div class="table-cell"></div>
+    <div class="table-cell"></div>
+    <div class="table-cell"></div>
+    <div class="table-cell"></div>
+    <div class="table-cell"></div>
+    <div class="table-cell"></div>
+    <div class="table-cell"></div>
+    <div class="table-cell"></div>
+    <div class="table-cell"></div>
+    <div class="table-cell"></div>
+    <div class="table-cell"></div>
+    <div class="table-cell"></div>
+    <div class="table-cell"></div>
+    <div class="table-cell"></div>
+    <div class="table-cell"></div>
+    <div class="table-cell"></div>
+</div>
+</div>
+<button id="getLocationBtn">Moja lokalizacja</button>
+<button id="saveButton">Zapisz mapę</button>
+
+<canvas id="rasterMap"></canvas>
+
+
+<div id="puzzle-container"></div>
+
+
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+<script src="leaflet-1.7.1/leaflet-src.js"></script>
+<script src="leaflet-1.7.1/leaflet-providers.js"></script>
+<script src="leaflet-1.7.1/leaflet-image.js"></script>
+
+<script src="puzzle.js"></script>
+
+</body>
+</html>
