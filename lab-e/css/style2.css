@@ -1,0 +1,98 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*background-color: #00bbff; */
+    background-image: url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=1380&t=st=1697895600~exp=1697896200~hmac=811d90fa1c931de764ddf2a2511eaebfb109bb07f3736d4258fd7b2997bdc524");
+}
+
+header, nav, main, footer {
+    margin: 20px;
+    padding: 20px;
+    background-color: #010d3f; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    color: #fef9ec; 
+    text-align: center;
+}
+
+header h2 {
+    font-size: 24px;
+    color: #fef9ec; 
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fef9ec;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #2980b9;
+}
+
+main h3 {
+    font-size: 28px;
+    color: #fef9ec;
+}
+
+main p {
+    font-size: 16px;
+    color: #fef9ec;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fef9ec;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main h3 {
+        font-size: 24px;
+    }
+
+    main p {
+        font-size: 14px;
+    }
+}
